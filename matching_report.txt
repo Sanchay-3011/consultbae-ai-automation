@@ -1,0 +1,920 @@
+================================================================================
+CONSULTBAE ENTITY RESOLUTION AUDIT REPORT
+================================================================================
+
+--- PART 1: INDIVIDUAL RECORD AUDIT TRAIL ---
+Rec: source1_naukri_applicants.csv | Line 2 | Assigned ID: P001
+  Name: 'Tanvi Gupta' -> 'tanvi gupta'
+  Email: 'tanvi.gupta31@example.com' -> 'tanvi.gupta31@example.com'
+  Phone: '+919000000254' -> '9000000254'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 3 | Assigned ID: P002
+  Name: 'Manish Reddy' -> 'manish reddy'
+  Email: 'manish.reddy73@example.com' -> 'manish.reddy73@example.com'
+  Phone: '9000000237' -> '9000000237'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 4 | Assigned ID: P003
+  Name: 'Priya Singh' -> 'priya singh'
+  Email: 'priya.singh61@mailtest.example.org' -> 'priya.singh61@mailtest.example.org'
+  Phone: '09000000287' -> '9000000287'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 5 | Assigned ID: P004
+  Name: 'Vikram Saxena' -> 'vikram saxena'
+  Email: 'vikram.saxena60@example.com' -> 'vikram.saxena60@example.com'
+  Phone: '9000000113' -> '9000000113'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 6 | Assigned ID: P005
+  Name: 'Amit Agarwal' -> 'amit agarwal'
+  Email: 'amit.agarwal3@mailtest.example.org' -> 'amit.agarwal3@mailtest.example.org'
+  Phone: '+919000000288' -> '9000000288'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 7 | Assigned ID: P006
+  Name: 'Sahil Malhotra' -> 'sahil malhotra'
+  Email: 'sahil.malhotra1@example.in' -> 'sahil.malhotra1@example.in'
+  Phone: '+919000000143' -> '9000000143'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 8 | Assigned ID: P007
+  Name: 'Shreya Gupta' -> 'shreya gupta'
+  Email: 'shreya.gupta85@example.com' -> 'shreya.gupta85@example.com'
+  Phone: '9000000227' -> '9000000227'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 9 | Assigned ID: P008
+  Name: 'Isha Chopra' -> 'isha chopra'
+  Email: 'isha.chopra95@mailtest.example.org' -> 'isha.chopra95@mailtest.example.org'
+  Phone: '09000000138' -> '9000000138'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 10 | Assigned ID: P009
+  Name: 'Priya Nair' -> 'priya nair'
+  Email: 'priya.nair70@example.com' -> 'priya.nair70@example.com'
+  Phone: '+919000000222' -> '9000000222'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 11 | Assigned ID: P010
+  Name: 'Rohit Mishra' -> 'rohit mishra'
+  Email: 'rohit.mishra70@mailtest.example.org' -> 'rohit.mishra70@mailtest.example.org'
+  Phone: '09000000167' -> '9000000167'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 12 | Assigned ID: P011
+  Name: 'Rahul Malhotra' -> 'rahul malhotra'
+  Email: 'rahul.malhotra69@mailtest.example.org' -> 'rahul.malhotra69@mailtest.example.org'
+  Phone: '09000000260' -> '9000000260'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 13 | Assigned ID: P012
+  Name: 'Rahul Jain' -> 'rahul jain'
+  Email: 'rahul.jain34@example.in' -> 'rahul.jain34@example.in'
+  Phone: '09000000114' -> '9000000114'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 14 | Assigned ID: P013
+  Name: 'Nikhil Malhotra' -> 'nikhil malhotra'
+  Email: 'nikhil.malhotra41@example.in' -> 'nikhil.malhotra41@example.in'
+  Phone: '09000000145' -> '9000000145'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 15 | Assigned ID: P014
+  Name: 'Karan Bhatia' -> 'karan bhatia'
+  Email: 'karan.bhatia32@mailtest.example.org' -> 'karan.bhatia32@mailtest.example.org'
+  Phone: '+919000000211' -> '9000000211'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 16 | Assigned ID: P015
+  Name: 'Ritu Sharma' -> 'ritu sharma'
+  Email: 'ritu.sharma23@mailtest.example.org' -> 'ritu.sharma23@mailtest.example.org'
+  Phone: '09000000146' -> '9000000146'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 17 | Assigned ID: P016
+  Name: 'Arjun Mishra' -> 'arjun mishra'
+  Email: 'arjun.mishra70@example.com' -> 'arjun.mishra70@example.com'
+  Phone: '9000000106' -> '9000000106'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 18 | Assigned ID: P017
+  Name: 'Meera Bhatia' -> 'meera bhatia'
+  Email: 'meera.bhatia52@mailtest.example.org' -> 'meera.bhatia52@mailtest.example.org'
+  Phone: '09000000223' -> '9000000223'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 19 | Assigned ID: P018
+  Name: 'Varun Jain' -> 'varun jain'
+  Email: 'varun.jain29@example.com' -> 'varun.jain29@example.com'
+  Phone: '9000000263' -> '9000000263'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 20 | Assigned ID: P019
+  Name: 'Arjun Mehta' -> 'arjun mehta'
+  Email: 'arjun.mehta9@example.in' -> 'arjun.mehta9@example.in'
+  Phone: '09000000131' -> '9000000131'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 21 | Assigned ID: P020
+  Name: 'Kavya Mehta' -> 'kavya mehta'
+  Email: 'kavya.mehta7@example.com' -> 'kavya.mehta7@example.com'
+  Phone: '+919000000177' -> '9000000177'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 22 | Assigned ID: P021
+  Name: 'Sneha Chopra' -> 'sneha chopra'
+  Email: 'sneha.chopra99@example.in' -> 'sneha.chopra99@example.in'
+  Phone: '+919000000162' -> '9000000162'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 23 | Assigned ID: P022
+  Name: 'Deepak Mehta' -> 'deepak mehta'
+  Email: 'deepak.mehta86@example.in' -> 'deepak.mehta86@example.in'
+  Phone: '09000000116' -> '9000000116'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 24 | Assigned ID: P023
+  Name: 'Pooja Gupta' -> 'pooja gupta'
+  Email: 'pooja.gupta57@mailtest.example.org' -> 'pooja.gupta57@mailtest.example.org'
+  Phone: '09000000271' -> '9000000271'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 25 | Assigned ID: P024
+  Name: 'R. Verma' -> 'r verma'
+  Email: 'rohit.verma13@mailtest.example.org' -> 'rohit.verma13@mailtest.example.org'
+  Phone: '9000000294' -> '9000000294'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 26 | Assigned ID: P025
+  Name: 'Sneha Mishra' -> 'sneha mishra'
+  Email: 'sneha.mishra14@mailtest.example.org' -> 'sneha.mishra14@mailtest.example.org'
+  Phone: '9000000229' -> '9000000229'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 27 | Assigned ID: P026
+  Name: 'Nikhil Chopra' -> 'nikhil chopra'
+  Email: 'alt.nikhil.chopra70@example.com' -> 'alt.nikhil.chopra70@example.com'
+  Phone: '09000000103' -> '9000000103'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 28 | Assigned ID: P027
+  Name: 'Priya Saxena' -> 'priya saxena'
+  Email: 'priya.saxena61@example.com' -> 'priya.saxena61@example.com'
+  Phone: '+919000000231' -> '9000000231'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 29 | Assigned ID: P028
+  Name: 'Varun Saxena' -> 'varun saxena'
+  Email: 'varun.saxena21@example.in' -> 'varun.saxena21@example.in'
+  Phone: '9000000170' -> '9000000170'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 30 | Assigned ID: P029
+  Name: 'Gaurav Mehta' -> 'gaurav mehta'
+  Email: 'gaurav.mehta79@mailtest.example.org' -> 'gaurav.mehta79@mailtest.example.org'
+  Phone: '9000000133' -> '9000000133'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 31 | Assigned ID: P024
+  Name: 'Rohit Verma' -> 'rohit verma'
+  Email: 'rohit.verma13@mailtest.example.org' -> 'rohit.verma13@mailtest.example.org'
+  Phone: '9000000294' -> '9000000294'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 32 | Assigned ID: P030
+  Name: 'Rohit Nair' -> 'rohit nair'
+  Email: 'rohit.nair32@mailtest.example.org' -> 'rohit.nair32@mailtest.example.org'
+  Phone: '+919000000268' -> '9000000268'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 33 | Assigned ID: P031
+  Name: 'Deepak Nair' -> 'deepak nair'
+  Email: 'deepak.nair44@example.com' -> 'deepak.nair44@example.com'
+  Phone: '9000000296' -> '9000000296'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 34 | Assigned ID: P032
+  Name: 'Rahul Chopra' -> 'rahul chopra'
+  Email: 'rahul.chopra70@example.com' -> 'rahul.chopra70@example.com'
+  Phone: '09000000137' -> '9000000137'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 35 | Assigned ID: P033
+  Name: 'Deepak Singh' -> 'deepak singh'
+  Email: 'deepak.singh36@mailtest.example.org' -> 'deepak.singh36@mailtest.example.org'
+  Phone: '09000000202' -> '9000000202'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 36 | Assigned ID: P034
+  Name: 'Amit Reddy' -> 'amit reddy'
+  Email: 'amit.reddy9@mailtest.example.org' -> 'amit.reddy9@mailtest.example.org'
+  Phone: '09000000165' -> '9000000165'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 37 | Assigned ID: P035
+  Name: 'Nikhil Chopra' -> 'nikhil chopra'
+  Email: 'nikhil.chopra70@example.com' -> 'nikhil.chopra70@example.com'
+  Phone: '09000000103' -> '9000000103'
+  Decision: REVIEW | Confidence: LOW | Type: identifier_conflict
+  Reason: Identifier conflict: email_conflict=True, phone_conflict=False.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 38 | Assigned ID: P036
+  Name: 'Tanvi Agarwal' -> 'tanvi agarwal'
+  Email: 'tanvi.agarwal97@example.in' -> 'tanvi.agarwal97@example.in'
+  Phone: '+919000000148' -> '9000000148'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 39 | Assigned ID: P037
+  Name: 'Nikhil Mehta' -> 'nikhil mehta'
+  Email: 'nikhil.mehta5@example.com' -> 'nikhil.mehta5@example.com'
+  Phone: '09000000104' -> '9000000104'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 40 | Assigned ID: P038
+  Name: 'Isha Kapoor' -> 'isha kapoor'
+  Email: 'isha.kapoor54@example.com' -> 'isha.kapoor54@example.com'
+  Phone: '+919000000295' -> '9000000295'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 41 | Assigned ID: P039
+  Name: 'Arjun Bhatia' -> 'arjun bhatia'
+  Email: 'arjun.bhatia14@example.com' -> 'arjun.bhatia14@example.com'
+  Phone: '9000000212' -> '9000000212'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 42 | Assigned ID: P040
+  Name: 'Isha Sharma' -> 'isha sharma'
+  Email: 'isha.sharma15@example.com' -> 'isha.sharma15@example.com'
+  Phone: '+919000000259' -> '9000000259'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source1_naukri_applicants.csv | Line 43 | Assigned ID: P041
+  Name: 'Neha Bhatia' -> 'neha bhatia'
+  Email: 'neha.bhatia60@mailtest.example.org' -> 'neha.bhatia60@mailtest.example.org'
+  Phone: '09000000273' -> '9000000273'
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 2 | Assigned ID: P018
+  Name: 'Varun Jain' -> 'varun jain'
+  Email: 'varun.jain29@example.com' -> 'varun.jain29@example.com'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 3 | Assigned ID: P036
+  Name: 'Tanvi Agarwal' -> 'tanvi agarwal'
+  Email: 'tanvi.agarwal97@example.in' -> 'tanvi.agarwal97@example.in'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 4 | Assigned ID: P014
+  Name: 'Karan Bhatia' -> 'karan bhatia'
+  Email: 'karan.bhatia32@mailtest.example.org' -> 'karan.bhatia32@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 5 | Assigned ID: P016
+  Name: 'Arjun Mishra' -> 'arjun mishra'
+  Email: 'arjun.mishra70@example.com' -> 'arjun.mishra70@example.com'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 6 | Assigned ID: P038
+  Name: 'Isha Kapoor' -> 'isha kapoor'
+  Email: 'isha.kapoor54@example.com' -> 'isha.kapoor54@example.com'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 7 | Assigned ID: P008
+  Name: 'Isha Chopra' -> 'isha chopra'
+  Email: 'ISHA.CHOPRA95@MAILTEST.EXAMPLE.ORG' -> 'isha.chopra95@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 8 | Assigned ID: P017
+  Name: 'Meera Bhatia' -> 'meera bhatia'
+  Email: 'meera.bhatia52@mailtest.example.org' -> 'meera.bhatia52@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 9 | Assigned ID: P004
+  Name: 'Vikram Saxena' -> 'vikram saxena'
+  Email: 'vikram.saxena60@example.com' -> 'vikram.saxena60@example.com'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 10 | Assigned ID: P032
+  Name: 'Rahul Chopra' -> 'rahul chopra'
+  Email: 'rahul.chopra70@example.com' -> 'rahul.chopra70@example.com'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 11 | Assigned ID: P001
+  Name: 'Tanvi Gupta' -> 'tanvi gupta'
+  Email: 'tanvi.gupta31@example.com' -> 'tanvi.gupta31@example.com'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 13 | Assigned ID: P028
+  Name: 'Varun Saxena' -> 'varun saxena'
+  Email: 'VARUN.SAXENA21@EXAMPLE.IN' -> 'varun.saxena21@example.in'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 14 | Assigned ID: P021
+  Name: 'Sneha Chopra' -> 'sneha chopra'
+  Email: 'sneha.chopra99@example.in' -> 'sneha.chopra99@example.in'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 15 | Assigned ID: P031
+  Name: 'Deepak Nair' -> 'deepak nair'
+  Email: 'DEEPAK.NAIR44@EXAMPLE.COM' -> 'deepak.nair44@example.com'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 16 | Assigned ID: P029
+  Name: 'Gaurav Mehta' -> 'gaurav mehta'
+  Email: 'gaurav.mehta79@mailtest.example.org' -> 'gaurav.mehta79@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 17 | Assigned ID: P041
+  Name: 'Neha Bhatia' -> 'neha bhatia'
+  Email: 'NEHA.BHATIA60@MAILTEST.EXAMPLE.ORG' -> 'neha.bhatia60@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 18 | Assigned ID: P042
+  Name: 'Arjun Mehta' -> 'arjun mehta'
+  Email: 'arjun.mehta77@mailtest.example.org' -> 'arjun.mehta77@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: REVIEW | Confidence: LOW | Type: identifier_conflict
+  Reason: Identifier conflict: email_conflict=True, phone_conflict=.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 19 | Assigned ID: P043
+  Name: 'Manish Bhatia' -> 'manish bhatia'
+  Email: 'manish.bhatia3@example.com' -> 'manish.bhatia3@example.com'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 20 | Assigned ID: P008
+  Name: 'Isha Chopra' -> 'isha chopra'
+  Email: 'ISHA.CHOPRA95@MAILTEST.EXAMPLE.ORG' -> 'isha.chopra95@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 21 | Assigned ID: P044
+  Name: 'Divya Chopra' -> 'divya chopra'
+  Email: 'divya.chopra59@example.in' -> 'divya.chopra59@example.in'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 22 | Assigned ID: P045
+  Name: 'Karan Chopra' -> 'karan chopra'
+  Email: 'KARAN.CHOPRA76@MAILTEST.EXAMPLE.ORG' -> 'karan.chopra76@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 23 | Assigned ID: P046
+  Name: 'Vikram Mehta' -> 'vikram mehta'
+  Email: 'vikram.mehta6@example.com' -> 'vikram.mehta6@example.com'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 24 | Assigned ID: P047
+  Name: 'Pooja Kapoor' -> 'pooja kapoor'
+  Email: 'pooja.kapoor62@example.in' -> 'pooja.kapoor62@example.in'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 25 | Assigned ID: P048
+  Name: 'Kavya Verma' -> 'kavya verma'
+  Email: 'KAVYA.VERMA74@MAILTEST.EXAMPLE.ORG' -> 'kavya.verma74@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 26 | Assigned ID: P049
+  Name: 'Tanvi Reddy' -> 'tanvi reddy'
+  Email: 'TANVI.REDDY80@EXAMPLE.COM' -> 'tanvi.reddy80@example.com'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 27 | Assigned ID: P050
+  Name: 'Varun Singh' -> 'varun singh'
+  Email: 'varun.singh81@example.com' -> 'varun.singh81@example.com'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 28 | Assigned ID: P051
+  Name: 'Tanvi Kapoor' -> 'tanvi kapoor'
+  Email: 'tanvi.kapoor38@example.com' -> 'tanvi.kapoor38@example.com'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 29 | Assigned ID: P052
+  Name: 'Nikhil Nair' -> 'nikhil nair'
+  Email: 'nikhil.nair26@example.in' -> 'nikhil.nair26@example.in'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 30 | Assigned ID: P053
+  Name: 'Pooja Reddy' -> 'pooja reddy'
+  Email: 'pooja.reddy96@mailtest.example.org' -> 'pooja.reddy96@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 31 | Assigned ID: P054
+  Name: 'Tanvi Sharma' -> 'tanvi sharma'
+  Email: 'TANVI.SHARMA56@MAILTEST.EXAMPLE.ORG' -> 'tanvi.sharma56@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 32 | Assigned ID: P055
+  Name: 'Deepak Nair' -> 'deepak nair'
+  Email: 'DEEPAK.NAIR57@EXAMPLE.IN' -> 'deepak.nair57@example.in'
+  Phone: '' -> ''
+  Decision: REVIEW | Confidence: LOW | Type: identifier_conflict
+  Reason: Identifier conflict: email_conflict=True, phone_conflict=.
+------------------------------------------------------------
+Rec: source2_gig_workers.csv | Line 33 | Assigned ID: P056
+  Name: 'Anjali Agarwal' -> 'anjali agarwal'
+  Email: 'anjali.agarwal53@mailtest.example.org' -> 'anjali.agarwal53@mailtest.example.org'
+  Phone: '' -> ''
+  Decision: NEW_PERSON | Confidence: LOW | Type: none
+  Reason: No matching email, phone, or name found.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 2 | Assigned ID: P030
+  Name: 'Rohit Nair' -> 'rohit nair'
+  Email: '' -> ''
+  Phone: '9000000268' -> '9000000268'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 3 | Assigned ID: P015
+  Name: 'RITU SHARMA' -> 'ritu sharma'
+  Email: '' -> ''
+  Phone: '9000000146' -> '9000000146'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 4 | Assigned ID: P027
+  Name: 'Priya Saxena' -> 'priya saxena'
+  Email: '' -> ''
+  Phone: '919000000231' -> '9000000231'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 5 | Assigned ID: P019
+  Name: 'Arjun Mehta' -> 'arjun mehta'
+  Email: '' -> ''
+  Phone: '+91-9000000131' -> '9000000131'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 6 | Assigned ID: P037
+  Name: 'Nikhil Mehta' -> 'nikhil mehta'
+  Email: '' -> ''
+  Phone: '+91-9000000104' -> '9000000104'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 7 | Assigned ID: P011
+  Name: 'RAHUL MALHOTRA' -> 'rahul malhotra'
+  Email: '' -> ''
+  Phone: '919000000260' -> '9000000260'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 8 | Assigned ID: P022
+  Name: 'Deepak Mehta' -> 'deepak mehta'
+  Email: '' -> ''
+  Phone: '9000000116' -> '9000000116'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 9 | Assigned ID: P006
+  Name: 'SAHIL MALHOTRA' -> 'sahil malhotra'
+  Email: '' -> ''
+  Phone: '9000000143' -> '9000000143'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 10 | Assigned ID: P007
+  Name: 'Shreya Gupta' -> 'shreya gupta'
+  Email: '' -> ''
+  Phone: '+91-9000000227' -> '9000000227'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 11 | Assigned ID: P003
+  Name: 'Priya Singh' -> 'priya singh'
+  Email: '' -> ''
+  Phone: '9000000287' -> '9000000287'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 12 | Assigned ID: P018
+  Name: 'Varun Jain' -> 'varun jain'
+  Email: '' -> ''
+  Phone: '919000000263' -> '9000000263'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 13 | Assigned ID: P036
+  Name: 'Tanvi Agarwal' -> 'tanvi agarwal'
+  Email: '' -> ''
+  Phone: '919000000148' -> '9000000148'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 14 | Assigned ID: P014
+  Name: 'KARAN BHATIA' -> 'karan bhatia'
+  Email: '' -> ''
+  Phone: '9000000211' -> '9000000211'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 15 | Assigned ID: P016
+  Name: 'Arjun Mishra' -> 'arjun mishra'
+  Email: '' -> ''
+  Phone: '919000000106' -> '9000000106'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 17 | Assigned ID: P038
+  Name: 'Isha Kapoor' -> 'isha kapoor'
+  Email: '' -> ''
+  Phone: '+91-9000000295' -> '9000000295'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 18 | Assigned ID: P008
+  Name: 'Isha Chopra' -> 'isha chopra'
+  Email: '' -> ''
+  Phone: '919000000138' -> '9000000138'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 19 | Assigned ID: P017
+  Name: 'MEERA BHATIA' -> 'meera bhatia'
+  Email: '' -> ''
+  Phone: '919000000223' -> '9000000223'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 20 | Assigned ID: P004
+  Name: 'Vikram Saxena' -> 'vikram saxena'
+  Email: '' -> ''
+  Phone: '9000000113' -> '9000000113'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 21 | Assigned ID: P032
+  Name: 'Rahul Chopra' -> 'rahul chopra'
+  Email: '' -> ''
+  Phone: '9000000137' -> '9000000137'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 22 | Assigned ID: P001
+  Name: 'Tanvi Gupta' -> 'tanvi gupta'
+  Email: '' -> ''
+  Phone: '9000000254' -> '9000000254'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 23 | Assigned ID: P028
+  Name: 'VARUN SAXENA' -> 'varun saxena'
+  Email: '' -> ''
+  Phone: '919000000170' -> '9000000170'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 24 | Assigned ID: P021
+  Name: 'Sneha Chopra' -> 'sneha chopra'
+  Email: '' -> ''
+  Phone: '+91-9000000162' -> '9000000162'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 25 | Assigned ID: P031
+  Name: 'DEEPAK NAIR' -> 'deepak nair'
+  Email: '' -> ''
+  Phone: '919000000296' -> '9000000296'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 26 | Assigned ID: P029
+  Name: 'Gaurav Mehta' -> 'gaurav mehta'
+  Email: '' -> ''
+  Phone: '9000000133' -> '9000000133'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 27 | Assigned ID: P041
+  Name: 'Neha Bhatia' -> 'neha bhatia'
+  Email: '' -> ''
+  Phone: '9000000273' -> '9000000273'
+  Decision: MATCH | Confidence: HIGH | Type: email_or_phone_and_name
+  Reason: Exact match on email/phone and compatible name.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 28 | Assigned ID: P057
+  Name: 'Arjun Mehta' -> 'arjun mehta'
+  Email: '' -> ''
+  Phone: '9000000272' -> '9000000272'
+  Decision: REVIEW | Confidence: LOW | Type: identifier_conflict
+  Reason: Identifier conflict: email_conflict=, phone_conflict=True.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 29 | Assigned ID: P058
+  Name: 'MANISH BHATIA' -> 'manish bhatia'
+  Email: '' -> ''
+  Phone: '919000000161' -> '9000000161'
+  Decision: REVIEW | Confidence: LOW | Type: name_only_identifier_mismatch
+  Reason: Name matches but strong identifiers do not match.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 30 | Assigned ID: P059
+  Name: 'DIVYA CHOPRA' -> 'divya chopra'
+  Email: '' -> ''
+  Phone: '9000000111' -> '9000000111'
+  Decision: REVIEW | Confidence: LOW | Type: name_only_identifier_mismatch
+  Reason: Name matches but strong identifiers do not match.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 31 | Assigned ID: P060
+  Name: 'Karan Chopra' -> 'karan chopra'
+  Email: '' -> ''
+  Phone: '919000000245' -> '9000000245'
+  Decision: REVIEW | Confidence: LOW | Type: name_only_identifier_mismatch
+  Reason: Name matches but strong identifiers do not match.
+------------------------------------------------------------
+Rec: source3_cbnexus_contacts.csv | Line 32 | Assigned ID: P061
+  Name: 'Vikram Mehta' -> 'vikram mehta'
+  Email: '' -> ''
+  Phone: '+91-9000000261' -> '9000000261'
+  Decision: REVIEW | Confidence: LOW | Type: name_only_identifier_mismatch
+  Reason: Name matches but strong identifiers do not match.
+------------------------------------------------------------
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+1. Total source records: 103
+2. Source 1 record count: 42
+3. Source 2 record count: 31
+4. Source 3 record count: 30
+5. MATCH count: 42
+6. NEW_PERSON count: 53
+7. REVIEW count: 8
+8. Number of canonical people: 61
+9. Number of canonical people represented in 2+ sources: 25
+10. Number of canonical people represented in all 3 sources: 15
+
+================================================================================
+A. ALL REVIEW RECORDS
+================================================================================
+ID: P035 | Source: source1_naukri_applicants.csv (Line 37)
+  Name: 'Nikhil Chopra' | Email: 'nikhil.chopra70@example.com' | Phone: '09000000103'
+  Match Type: identifier_conflict | Reason: Identifier conflict: email_conflict=True, phone_conflict=False.
+------------------------------------------------------------
+ID: P042 | Source: source2_gig_workers.csv (Line 18)
+  Name: 'Arjun Mehta' | Email: 'arjun.mehta77@mailtest.example.org' | Phone: ''
+  Match Type: identifier_conflict | Reason: Identifier conflict: email_conflict=True, phone_conflict=.
+------------------------------------------------------------
+ID: P055 | Source: source2_gig_workers.csv (Line 32)
+  Name: 'Deepak Nair' | Email: 'DEEPAK.NAIR57@EXAMPLE.IN' | Phone: ''
+  Match Type: identifier_conflict | Reason: Identifier conflict: email_conflict=True, phone_conflict=.
+------------------------------------------------------------
+ID: P057 | Source: source3_cbnexus_contacts.csv (Line 28)
+  Name: 'Arjun Mehta' | Email: '' | Phone: '9000000272'
+  Match Type: identifier_conflict | Reason: Identifier conflict: email_conflict=, phone_conflict=True.
+------------------------------------------------------------
+ID: P058 | Source: source3_cbnexus_contacts.csv (Line 29)
+  Name: 'MANISH BHATIA' | Email: '' | Phone: '919000000161'
+  Match Type: name_only_identifier_mismatch | Reason: Name matches but strong identifiers do not match.
+------------------------------------------------------------
+ID: P059 | Source: source3_cbnexus_contacts.csv (Line 30)
+  Name: 'DIVYA CHOPRA' | Email: '' | Phone: '9000000111'
+  Match Type: name_only_identifier_mismatch | Reason: Name matches but strong identifiers do not match.
+------------------------------------------------------------
+ID: P060 | Source: source3_cbnexus_contacts.csv (Line 31)
+  Name: 'Karan Chopra' | Email: '' | Phone: '919000000245'
+  Match Type: name_only_identifier_mismatch | Reason: Name matches but strong identifiers do not match.
+------------------------------------------------------------
+ID: P061 | Source: source3_cbnexus_contacts.csv (Line 32)
+  Name: 'Vikram Mehta' | Email: '' | Phone: '+91-9000000261'
+  Match Type: name_only_identifier_mismatch | Reason: Name matches but strong identifiers do not match.
+------------------------------------------------------------
+
+================================================================================
+B. ALL RECORDS WITH CONFLICTING STRONG IDENTIFIERS
+================================================================================
+ID: P035 | Source: source1_naukri_applicants.csv (Line 37)
+  Name: 'Nikhil Chopra' | Email: 'nikhil.chopra70@example.com' | Phone: '09000000103'
+  Reason: Identifier conflict: email_conflict=True, phone_conflict=False.
+------------------------------------------------------------
+ID: P042 | Source: source2_gig_workers.csv (Line 18)
+  Name: 'Arjun Mehta' | Email: 'arjun.mehta77@mailtest.example.org' | Phone: ''
+  Reason: Identifier conflict: email_conflict=True, phone_conflict=.
+------------------------------------------------------------
+ID: P055 | Source: source2_gig_workers.csv (Line 32)
+  Name: 'Deepak Nair' | Email: 'DEEPAK.NAIR57@EXAMPLE.IN' | Phone: ''
+  Reason: Identifier conflict: email_conflict=True, phone_conflict=.
+------------------------------------------------------------
+ID: P057 | Source: source3_cbnexus_contacts.csv (Line 28)
+  Name: 'Arjun Mehta' | Email: '' | Phone: '9000000272'
+  Reason: Identifier conflict: email_conflict=, phone_conflict=True.
+------------------------------------------------------------
+
+================================================================================
+C. CANONICAL PEOPLE WITH MORE THAN ONE EMAIL
+================================================================================
+
+================================================================================
+D. CANONICAL PEOPLE WITH MORE THAN ONE PHONE
+================================================================================
+
+================================================================================
+E. CANONICAL PEOPLE CONTAINING RECORDS FROM MULTIPLE SOURCES
+================================================================================
+Person ID: P001 | Names: ['tanvi gupta']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 2, 'Tanvi Gupta'), ('source2_gig_workers.csv', 11, 'Tanvi Gupta'), ('source3_cbnexus_contacts.csv', 22, 'Tanvi Gupta')]
+------------------------------------------------------------
+Person ID: P003 | Names: ['priya singh']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 4, 'Priya Singh'), ('source3_cbnexus_contacts.csv', 11, 'Priya Singh')]
+------------------------------------------------------------
+Person ID: P004 | Names: ['vikram saxena']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 5, 'Vikram Saxena'), ('source2_gig_workers.csv', 9, 'Vikram Saxena'), ('source3_cbnexus_contacts.csv', 20, 'Vikram Saxena')]
+------------------------------------------------------------
+Person ID: P006 | Names: ['sahil malhotra']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 7, 'Sahil Malhotra'), ('source3_cbnexus_contacts.csv', 9, 'SAHIL MALHOTRA')]
+------------------------------------------------------------
+Person ID: P007 | Names: ['shreya gupta']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 8, 'Shreya Gupta'), ('source3_cbnexus_contacts.csv', 10, 'Shreya Gupta')]
+------------------------------------------------------------
+Person ID: P008 | Names: ['isha chopra']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 9, 'Isha Chopra'), ('source2_gig_workers.csv', 7, 'Isha Chopra'), ('source2_gig_workers.csv', 20, 'Isha Chopra'), ('source3_cbnexus_contacts.csv', 18, 'Isha Chopra')]
+------------------------------------------------------------
+Person ID: P011 | Names: ['rahul malhotra']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 12, 'Rahul Malhotra'), ('source3_cbnexus_contacts.csv', 7, 'RAHUL MALHOTRA')]
+------------------------------------------------------------
+Person ID: P014 | Names: ['karan bhatia']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 15, 'Karan Bhatia'), ('source2_gig_workers.csv', 4, 'Karan Bhatia'), ('source3_cbnexus_contacts.csv', 14, 'KARAN BHATIA')]
+------------------------------------------------------------
+Person ID: P015 | Names: ['ritu sharma']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 16, 'Ritu Sharma'), ('source3_cbnexus_contacts.csv', 3, 'RITU SHARMA')]
+------------------------------------------------------------
+Person ID: P016 | Names: ['arjun mishra']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 17, 'Arjun Mishra'), ('source2_gig_workers.csv', 5, 'Arjun Mishra'), ('source3_cbnexus_contacts.csv', 15, 'Arjun Mishra')]
+------------------------------------------------------------
+Person ID: P017 | Names: ['meera bhatia']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 18, 'Meera Bhatia'), ('source2_gig_workers.csv', 8, 'Meera Bhatia'), ('source3_cbnexus_contacts.csv', 19, 'MEERA BHATIA')]
+------------------------------------------------------------
+Person ID: P018 | Names: ['varun jain']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 19, 'Varun Jain'), ('source2_gig_workers.csv', 2, 'Varun Jain'), ('source3_cbnexus_contacts.csv', 12, 'Varun Jain')]
+------------------------------------------------------------
+Person ID: P019 | Names: ['arjun mehta']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 20, 'Arjun Mehta'), ('source3_cbnexus_contacts.csv', 5, 'Arjun Mehta')]
+------------------------------------------------------------
+Person ID: P021 | Names: ['sneha chopra']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 22, 'Sneha Chopra'), ('source2_gig_workers.csv', 14, 'Sneha Chopra'), ('source3_cbnexus_contacts.csv', 24, 'Sneha Chopra')]
+------------------------------------------------------------
+Person ID: P022 | Names: ['deepak mehta']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 23, 'Deepak Mehta'), ('source3_cbnexus_contacts.csv', 8, 'Deepak Mehta')]
+------------------------------------------------------------
+Person ID: P027 | Names: ['priya saxena']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 28, 'Priya Saxena'), ('source3_cbnexus_contacts.csv', 4, 'Priya Saxena')]
+------------------------------------------------------------
+Person ID: P028 | Names: ['varun saxena']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 29, 'Varun Saxena'), ('source2_gig_workers.csv', 13, 'Varun Saxena'), ('source3_cbnexus_contacts.csv', 23, 'VARUN SAXENA')]
+------------------------------------------------------------
+Person ID: P029 | Names: ['gaurav mehta']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 30, 'Gaurav Mehta'), ('source2_gig_workers.csv', 16, 'Gaurav Mehta'), ('source3_cbnexus_contacts.csv', 26, 'Gaurav Mehta')]
+------------------------------------------------------------
+Person ID: P030 | Names: ['rohit nair']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 32, 'Rohit Nair'), ('source3_cbnexus_contacts.csv', 2, 'Rohit Nair')]
+------------------------------------------------------------
+Person ID: P031 | Names: ['deepak nair']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 33, 'Deepak Nair'), ('source2_gig_workers.csv', 15, 'Deepak Nair'), ('source3_cbnexus_contacts.csv', 25, 'DEEPAK NAIR')]
+------------------------------------------------------------
+Person ID: P032 | Names: ['rahul chopra']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 34, 'Rahul Chopra'), ('source2_gig_workers.csv', 10, 'Rahul Chopra'), ('source3_cbnexus_contacts.csv', 21, 'Rahul Chopra')]
+------------------------------------------------------------
+Person ID: P036 | Names: ['tanvi agarwal']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 38, 'Tanvi Agarwal'), ('source2_gig_workers.csv', 3, 'Tanvi Agarwal'), ('source3_cbnexus_contacts.csv', 13, 'Tanvi Agarwal')]
+------------------------------------------------------------
+Person ID: P037 | Names: ['nikhil mehta']
+  Sources: ['source1_naukri_applicants.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 39, 'Nikhil Mehta'), ('source3_cbnexus_contacts.csv', 6, 'Nikhil Mehta')]
+------------------------------------------------------------
+Person ID: P038 | Names: ['isha kapoor']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 40, 'Isha Kapoor'), ('source2_gig_workers.csv', 6, 'Isha Kapoor'), ('source3_cbnexus_contacts.csv', 17, 'Isha Kapoor')]
+------------------------------------------------------------
+Person ID: P041 | Names: ['neha bhatia']
+  Sources: ['source1_naukri_applicants.csv', 'source2_gig_workers.csv', 'source3_cbnexus_contacts.csv']
+  Records: [('source1_naukri_applicants.csv', 43, 'Neha Bhatia'), ('source2_gig_workers.csv', 17, 'Neha Bhatia'), ('source3_cbnexus_contacts.csv', 27, 'Neha Bhatia')]
+------------------------------------------------------------
+
+================================================================================
+F. SOURCE-LEVEL DUPLICATES / SUSPICIOUS DUPLICATES
+================================================================================
+Suspicious duplicate in source2_gig_workers.csv grouped under Canonical ID: P008
+  Line 7: Name: 'Isha Chopra', Email: 'ISHA.CHOPRA95@MAILTEST.EXAMPLE.ORG', Phone: 'None'
+  Line 20: Name: 'Isha Chopra', Email: 'ISHA.CHOPRA95@MAILTEST.EXAMPLE.ORG', Phone: 'None'
+------------------------------------------------------------
+Suspicious duplicate in source1_naukri_applicants.csv grouped under Canonical ID: P024
+  Line 25: Name: 'R. Verma', Email: 'rohit.verma13@mailtest.example.org', Phone: '9000000294'
+  Line 31: Name: 'Rohit Verma', Email: 'rohit.verma13@mailtest.example.org', Phone: '9000000294'
+------------------------------------------------------------
