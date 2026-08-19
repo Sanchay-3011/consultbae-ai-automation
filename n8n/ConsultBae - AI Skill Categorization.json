@@ -1,0 +1,240 @@
+{
+  "name": "ConsultBae - AI Skill Categorization",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -304,
+        -16
+      ],
+      "id": "795e79f9-696a-44d2-ba63-96e76930303c",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:8000/automation/gig-workers",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -96,
+        -16
+      ],
+      "id": "04494f5a-ec26-4e8b-9c70-056ef227091f",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        128,
+        -16
+      ],
+      "id": "dd6de1dc-9830-4574-a742-126baa4b7280",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are ConsultBae's AI skill categorization system.\n\nCategorize the worker's skills into exactly ONE category:\n\nAI/ML\nSoftware Development\nData Engineering\nData Analysis\nCloud/DevOps\nWeb Development\nMobile Development\nQA/Testing\nDesign\nOther\n\nWorker skills:\n{{ $json.skill_tags }}\n\nReturn only the category.",
+        "hasOutputParser": true,
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        320,
+        128
+      ],
+      "id": "40314011-fea6-41e5-a8f1-c9ef9f874e94",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": "openai/gpt-oss-120b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        320,
+        368
+      ],
+      "id": "a006cd19-2c46-44df-93f1-207c79b3bdd0",
+      "name": "Groq Chat Model",
+      "credentials": {
+        "groqApi": {
+          "id": "PMP0OVxkvwupe2pb",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n  \"category\": \"Data Engineering\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        464,
+        352
+      ],
+      "id": "7c24a8c8-1cb8-405f-9cf3-da84c4ee2863",
+      "name": "Structured Output Parser1"
+    },
+    {
+      "parameters": {
+        "amount": 20
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        624,
+        -208
+      ],
+      "id": "d0a41db7-4be1-46ee-859c-b8c0070b84a1",
+      "name": "Wait",
+      "webhookId": "af217235-f79d-48d4-9594-9800c3923913"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=http://127.0.0.1:8000/automation/gig-workers/{{$('Loop Over Items').item.json.profile_id}}/category",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "category",
+              "value": "={{$json.output.category}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        800,
+        -208
+      ],
+      "id": "77e95cfb-c87b-4bfa-8885-4ed4cd18c9b6",
+      "name": "HTTP Request1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser1": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "f7b18b6f-1b01-44cb-afa3-6692491aba88",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "96116b80e29ca2eb21a1d37ca7432cfc8ebdb2851da8975f88e97433f8e8bf75"
+  },
+  "nodeGroups": [],
+  "id": "YcaJvEDOsqLiYaZB",
+  "tags": []
+}

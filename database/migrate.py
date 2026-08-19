@@ -4,7 +4,8 @@ from database.schema import (
     CREATE_SOURCE_RECORDS_TABLE,
     CREATE_GIG_WORKER_PROFILES_TABLE,
     CREATE_CBNEXUS_PROFILES_TABLE,
-    CREATE_MATCH_REVIEWS_TABLE
+    CREATE_MATCH_REVIEWS_TABLE,
+    CREATE_AUDIO_SUBMISSIONS_TABLE
 )
 
 def get_connection(db_path):
@@ -23,6 +24,7 @@ def init_db(db_path):
     # Drop tables if we want clean state (for builds)
     # Ordered to avoid foreign key violations on drop
     tables_to_drop = [
+        "audio_submissions",
         "match_reviews",
         "cbnexus_profiles",
         "gig_worker_profiles",
@@ -39,6 +41,7 @@ def init_db(db_path):
     cursor.execute(CREATE_GIG_WORKER_PROFILES_TABLE)
     cursor.execute(CREATE_CBNEXUS_PROFILES_TABLE)
     cursor.execute(CREATE_MATCH_REVIEWS_TABLE)
+    cursor.execute(CREATE_AUDIO_SUBMISSIONS_TABLE)
     
     conn.commit()
     conn.close()

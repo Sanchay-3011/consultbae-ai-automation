@@ -51,6 +51,7 @@ CREATE TABLE IF NOT EXISTS gig_worker_profiles (
     rate_period TEXT,
     status TEXT,
     skill_tags TEXT,
+    skill_category TEXT,
     FOREIGN KEY(person_id) REFERENCES people(id),
     FOREIGN KEY(source_record_id) REFERENCES source_records(id)
 );
@@ -84,3 +85,29 @@ CREATE TABLE IF NOT EXISTS match_reviews (
     FOREIGN KEY(candidate_person_id) REFERENCES people(id)
 );
 """
+
+CREATE_AUDIO_SUBMISSIONS_TABLE = """
+CREATE TABLE IF NOT EXISTS audio_submissions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    person_id TEXT NULL,
+    submitted_name TEXT NOT NULL,
+    normalized_name TEXT NOT NULL,
+    submitted_phone TEXT NOT NULL,
+    normalized_phone TEXT NOT NULL,
+    file_path TEXT NOT NULL,
+    original_filename TEXT,
+    mime_type TEXT,
+    file_size_bytes INTEGER NOT NULL,
+    duration_seconds REAL NOT NULL,
+    sample_rate_khz REAL NOT NULL,
+    bitrate_kbps REAL NOT NULL,
+    loudness_db REAL NOT NULL,
+    noise_level_db REAL,
+    quality_score REAL,
+    quality_label TEXT,
+    match_status TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (person_id) REFERENCES people(id)
+);
+"""
+

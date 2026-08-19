@@ -21,7 +21,7 @@ def main():
     print("=" * 60)
     
     # Table counts
-    tables = ["people", "source_records", "gig_worker_profiles", "cbnexus_profiles", "match_reviews"]
+    tables = ["people", "source_records", "gig_worker_profiles", "cbnexus_profiles", "match_reviews", "audio_submissions"]
     for table in tables:
         cursor.execute(f"SELECT COUNT(*) FROM {table}")
         count = cursor.fetchone()[0]
