@@ -23,9 +23,36 @@ An end-to-end data integration, identity resolution, audio analysis, and low-cod
 - **Audio Processing Heuristics**: Extracts actual duration, sample rate (kHz), bitrate, RMS dBFS loudness (`loudness_db`), noise floor (low-energy 50ms frames), and speech presence detection.
 - **Candidate Linking**: Submissions are strictly verified against the database and linked to the canonical person ID only when the normalized phone and name uniquely resolve to a single person.
 
-### 📈 Part 4: Data Quality Profiling & Auditing Reports
-- **Data Profiler**: Programmatically generates missing-value counts, CTC formats, phone distribution, and near-duplicates.
-- **Auditing Tool**: Generates a complete record resolution summary and stores it in `matching_report.txt`.
+### 🔍 Part 4: Data Quality Issues Audit (ConsultBae_Task4_Data_Issues_Report.pdf)
+- **Dataset Overview**: Ingested 103 raw rows (42 in Source 1, 31 in Source 2, 30 in Source 3) resolving to 53 canonical people, with 25 people in 2+ files and 15 in all three. 8 rows were flagged for manual review.
+- **Source 1 Issues**:
+  - *Phone Numbers*: Standardized from 4 formats (e.g. +91, leading 0, 10-digit) to a clean 10-digit string.
+  - *Cities*: Standardized casing and mapped `Bangalore`/`Bengaluru` and `Gurgaon`/`Gurugram`. Kept `Delhi`, `New Delhi`, and `Delhi NCR` distinct as they do not affect matching.
+  - *Current CTC*: Mixed units. Values < 100 are treated as LPA (multiplied by 100,000) while values >= 100 are treated as absolute INR.
+  - *Applied Dates*: Standardized 4 formats into `YYYY-MM-DD` ISO format.
+  - *Duplicates*: Merged shortened duplicate names (`R. Verma` vs `Rohit Verma` sharing email/phone) and flagged Nikhil Chopra's email conflict (same phone, different emails) for review.
+- **Source 2 Issues**:
+  - *Shifted Columns*: Shifted fields on Line 20 realigned (skills in email column, email in name, etc.) and merged with `Isha Chopra`.
+  - *Rates*: Stored as separate amount and unit fields (`/hr` vs `/month`) to avoid making false hours-per-month conversions.
+  - *Statuses & Casing*: Standardized cases; kept `paused` distinct from `inactive`.
+- **Source 3 Issues**:
+  - *Duplicate Header*: Line 16 repeated the header and was skipped.
+  - *Verified Field*: Normalized variations (`Y`, `yes`, `No`, `N`, `Yes`) to Boolean `True`/`False`.
+- **Cross-Source Challenges**:
+  - *Same Name / Different People*: Names like `Arjun Mehta` and `Deepak Nair` appear multiple times with conflicting identifiers; resolved as separate canonical profiles or flagged as conflicts instead of incorrectly fusing them.
+  - *No Shared Identifier*: Cases where candidates appear only in Source 2 (email-only) and Source 3 (phone-only) with matching names (e.g. `Manish Bhatia`, `Divya Chopra`, `Karan Chopra`, `Vikram Mehta`) are flagged for review.
+
+### 📈 Part 5: Audio App Scaling Analysis (ConsultBae_Task5_Scale_Up_Analysis.pdf)
+To scale the audio submission application to 5,000+ concurrent workers:
+- **What Breaks First**:
+  1. *SQLite Write Bottleneck*: SQLite allows only one writer at a time, resulting in connection timeouts under high concurrency.
+  2. *Inline Processing Delay*: Running NumPy audio computations synchronously inside the request blocks server threads.
+  3. *Local Storage Risks*: streamlit hosting filesystems do not persist across server restarts.
+- **Core Scalability Recommendations**:
+  *   **Object Storage (AWS S3)**: Move audio files directly to object storage immediately after upload.
+  *   **PostgreSQL**: Replace SQLite with PostgreSQL to remove single-writer locks.
+  *   **Decoupled Background Tasks**: Save uploaded audio files instantly and queue CPU-bound analysis to background worker processes (e.g. using Celery or RQ with Redis).
+  *   **Idempotency & Retry**: Add duplicate checks per phone number and client-side upload retries for flaky connections.
 
 ---
 
@@ -91,13 +118,3 @@ pytest -q
         FOREIGN KEY (person_id) REFERENCES people(id)
     );
     ```
-
----
-
-## 📈 Part 5: Scalability & Design for 5,000+ Workers
-
-If the system scales to 5,000+ concurrent workers submitting audio:
-1.  **Audio Processing Queues**: Move audio analysis off the web server onto asynchronous worker tasks using Celery or RQ, backed by Redis.
-2.  **Object Storage**: Transition from storing audio files in the local filesystem to using cloud-native storage like AWS S3 or Google Cloud Storage, with CDN delivery for playback.
-3.  **Database Scaling**: Migrate from SQLite to a highly concurrent relational database like PostgreSQL. Index columns like `normalized_phone` and `normalized_email` to ensure sub-millisecond query performance during entity resolution.
-4.  **Audio Pre-compression**: Compress audio client-side (e.g. to MP3 or OGG/Opus) prior to upload to optimize bandwidth and network utilization.
